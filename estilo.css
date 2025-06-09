@@ -1,0 +1,74 @@
+ body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr repeat(2, 1fr) 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 900px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .green { background-color: #28a745; }
+        .orange { background-color: #ffc107; }
+        .red { background-color: #dc3545; }
+
+        .uno {
+            grid-column: 1;
+            grid-row: 1 / span 3;
+        }
+
+        .dos {
+            grid-column: 2 / span 2;
+            grid-row: 1;
+        }
+
+        .tres {
+            grid-column: 4;
+            grid-row: 1;
+        }
+
+        .cuatro {
+            grid-column: 4;
+            grid-row: 2 / span 2;
+        }
+
+        .cinco {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .siete {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .ocho {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .seis {
+            grid-column: 3;
+            grid-row: 3;
+        }
